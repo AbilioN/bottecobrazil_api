@@ -16,3 +16,4 @@ Route::get('/', function () {
 });
 
 Route::get('/admin/login' , 'Auth\LoginController@showLoginForm')->name('login');
+Route::post('/admin/login' , 'Auth\LoginController@login')->name('login.submit');
